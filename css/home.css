@@ -1,0 +1,375 @@
+.head-vector{
+  display: flex;
+  position: absolute;
+  margin-bottom: 90px;
+  margin-left: 100px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.head-vector img{
+  
+  width: auto;
+  height: 550px;
+  min-height: 400px;
+  z-index: -9;
+}
+
+.news-wrapper{
+  display: block;
+  margin: 130px auto;
+  width: 1100px;
+  height: 430px;
+  
+}
+
+.news-wrapper ul {
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.news-wrapper li {
+  
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  width: 250px;
+  height: 380px;
+  margin-left: -30px;
+  background-color: white;
+  margin-top: 25px; 
+  filter: drop-shadow(0px 0px 6px grey);
+  overflow: hidden;
+  z-index: auto;
+}
+
+
+.news-wrapper li:hover{
+
+  transition: all .35s ease-in-out;
+  transform: scale(1.1);
+  z-index: 2;
+  cursor: pointer;
+
+
+
+}
+.news-wrapper text{
+  font-family: "Istok Web", sans-serif;
+  display: flex;
+  z-index: 3;
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom:250px;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 100px;
+}
+.news-wrapper strong{
+  font-size: 21px;
+  font-weight: 600;
+}
+.news-wrapper p{
+  font-family: "Istok Web", sans-serif;
+  color:gray;
+  display: flex;
+  margin-bottom:250px;
+  margin-right: 10px;
+  margin-left: 12px;
+  font-size: 15px;
+
+
+}
+#Med{
+  margin-right:90px;
+
+}
+.news-wrapper span{
+  position: absolute;
+  height: 65%;
+  bottom: 0px;
+  width: 100%;
+}
+
+.news-wrapper li span img{
+  position: absolute;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: fill;
+  height: 100%;
+ }
+
+
+ .splitter{
+  background-color: var(--navmain-color);
+  width: 100vw;
+  min-width: 1200px;
+  height: 220px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  
+ }
+
+.splitter ul{
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  place-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap:30px;
+  float: left;
+  margin-left: 80px;
+  
+}
+.splitter img:not(#last-img){
+  margin: 80px 0;
+  width: auto;
+  height: 70px;
+}
+
+#last-img{
+  height: 120px;
+
+
+}
+
+
+.splitter h2{
+  font-family: "Hind Vadodara", sans-serif;
+  font-weight: 300;
+  display: block;
+  text-align: center; 
+  margin: auto;
+  color:white;
+  font-size: 32px;
+  padding-top: 45px;
+
+}
+
+.splitter hr{
+  display: flex;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border:  1px solid var(--navline-color);
+
+}
+
+
+.more-news{
+  display: block;
+  margin-bottom: 200px;
+  margin-top: 190px;
+  width: 980px;
+  height:700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inside-news{
+  margin: 100px auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+ 
+
+}
+
+.inside-news ul{
+  margin: auto;
+  width:950px;
+  height:500px;
+  display:grid;
+  grid-template-columns: 450px 250px 250px;
+  grid-row: 0px 250px 250px;
+}
+.inside-news li{
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  filter: drop-shadow(0px 0px 6px grey);
+  overflow: hidden;
+
+}
+
+.inside-news li:hover{
+  transition: all .35s ease-in-out;
+  transform: scale(1.1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.inside-news li:nth-child(1){
+  z-index: 1;
+  width: 450px;
+  height: 500px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+
+#big-span{
+  top:0;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+
+}
+
+.inside-news span{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 63%;
+}
+.inside-news img {
+  width: 250px;
+  height: auto;
+  object-fit: fill;
+}
+
+#big-picture{
+  width: 500px;
+  height: auto;
+  object-fit: fill;
+}
+
+
+.foot-vector{
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 100px;
+  z-index: -9;
+  right:-20px;
+  
+}
+
+.foot-vector img{
+  width: auto;
+  height: 330px;
+}
+
+
+
+.facts-news{
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0px;
+  
+}
+
+.container{
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  justify-content: center;
+
+}
+.container span{
+  text-align: center;
+  place-items: center;
+  top:55px;
+  height: 20px;
+  width: auto;
+  position: absolute;
+  font-family: "Istok Web", sans-serif;
+  font-size: 18px;
+
+
+}
+.container .date{
+  display: flex;
+  left: 40px;
+  flex-direction: column;
+
+}
+.container .facts{
+  
+  display: flex;
+  flex-direction: row;
+  top: 83px;
+  color: grey;
+  font-size: 20px;
+}
+.facts p{
+margin-left: 25px;
+margin-bottom: 20px;}
+
+
+
+
+
+.facts-news2{
+  position: absolute;
+  width: 100%;
+  height: 37%;
+  top: 0px;
+  
+}
+
+.container2{
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+  justify-content: center;
+
+}
+.container2 span{
+  text-align: center;
+  place-items: center;
+  top:0px;
+  height: 20px;
+  width: auto;
+  position: absolute;
+  font-family: "Istok Web", sans-serif;
+  font-size: 15px;
+
+
+}
+.container2 .date2{
+  top:14px;
+  display: flex;
+  left: 17px;
+  flex-direction: column;
+
+}
+.container2 .facts2{
+  left:60px;
+  display: flex;
+  flex-direction: row;
+  top: 50px;
+  color: grey;
+  font-size: 16px;
+}
+.facts2 p{
+margin-left: 13px;
+margin-bottom: 20px;}
+
+
+
+
+
+
+

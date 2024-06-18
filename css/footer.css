@@ -1,0 +1,32 @@
+footer {
+  width: 100vw;
+  min-width: 1200px;
+
+  
+}
+
+.footer-wrapper {
+  min-width: 1200px;
+
+  height: 200px;
+  background-color: var(--footer-color);
+  border-top: 3px solid var(--navline-color);
+}
+
+.line {
+  min-width: 1200px;
+
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 3px; /* Height of the border */
+  background: linear-gradient(90deg, var(--firstgradient-color), var(--secondgradient-color), var(--thirdgradient-color));
+}
+
+.second-footer {
+  min-width: 1200px;
+  width: 100vw;
+  height: 50px;
+  background-color: var(--navmain-color);
+  margin-top: 145px;
+}

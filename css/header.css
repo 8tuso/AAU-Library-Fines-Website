@@ -1,0 +1,167 @@
+:root {
+  --navmain-color: #0C0C0C;
+  --navline-color: #FF550C;
+  --navnoactive-color: #A4A4A7;
+  --navsecond-color: #FFFFFF;
+  --form-color: #ffff;
+  --formshadow-color: #D7ADBF;
+  --formhalf-color: #282726;
+  --firstgradient-color: #F78C26;
+  --secondgradient-color: #E83894;
+  --thirdgradient-color: #5672EA;
+  --footer-color: #323232;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 32px;
+  flex: 1;
+}
+
+.li-wrapper li strong{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 15px;
+  margin-right: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.warpper {
+  margin-top: 5px;
+  font-family: "Itim", cursive;
+}
+
+.upper-nav {
+  display: flex;
+  z-index: 12;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: var(--navmain-color);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-bottom: 2px solid var(--navline-color);
+}
+
+.second-nav {
+  z-index: 11;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background-color: var(--navsecond-color);
+  filter: drop-shadow(0px 1px 5px gray);
+  overflow: hidden;
+  top: 50px;
+  left: 0;
+  display: flex;
+}
+
+.second-nav a {
+  display: block;
+  color: black;
+  padding: 16px 10px;
+}
+
+.profile-picture {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: var(--formhalf-color);
+  border-radius: 50%;
+  margin: 3px 20px;
+  outline: solid 1.5px var(--navline-color);
+  overflow: hidden;
+}
+
+.profile-picture > img {
+  margin-left: -3px;
+  width: 120%;
+  height: auto;
+  object-fit: fill;
+}
+
+.upper-nav > ul {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.li-wrapper {
+  display: flex;
+  float: right;
+  text-align: center;
+  margin-right: 50px;
+}
+
+li img, .second-nav li {
+  float: left;
+}
+
+.upper-nav a {
+  display: flex;
+  color: var(--navnoactive-color);
+  padding: 14px 40px;
+}
+
+.upper-nav li img {
+  object-fit: contain;
+  display: block;
+  margin-top: 5px;
+  padding: 0px 20px 15px;
+  width: auto;
+  max-height: 55px;
+}
+
+.menu-bar {
+  display: block;
+  position: fixed;
+  z-index: 11;
+  top: 50px;
+  background-color: var(--navmain-color);
+  color: var(--navnoactive-color);
+  text-transform: uppercase;
+  width: 200px;
+  height: 0px;
+  border-radius: 0px 0px 0px 10px;
+  filter: drop-shadow(0px 0px 3px gray);
+  overflow: hidden;
+  transition: height 10ms ease;
+}
+
+.menu-bar.menu-open {
+  height: auto;
+}
+
+.menu-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
