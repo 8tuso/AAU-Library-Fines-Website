@@ -62,5 +62,5 @@ This project is a web-based University Library Management System developed using
 8tuso :3
 ## Contact
 
-For any questions or suggestions, feel free to reach out to me at [your email].
+For any questions or suggestions, feel free to reach out to me at Talal.alhayek@Outlook.com .
 
